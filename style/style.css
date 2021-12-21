@@ -1,0 +1,381 @@
+/** VARIABLES **/
+:root {
+  --mainColor: #282828;
+  --secondColor: #767676;
+}
+/* fonts faces */
+@font-face {
+  font-family: "roboto";
+  src: url(../webfonts/Roboto-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../webfonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../webfonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../webfonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../webfonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../webfonts/Roboto-Thin.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+/* fonts faces */
+
+.smedia-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 51px;
+    margin-left: -155px;
+    text-align: center;
+}
+.smedia-icons i {
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--mainColor);
+    margin: 0 10px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--mainColor);
+    font-size: 18px;
+}
+.smedia-icons i:hover {
+    transition: all .4s ease-in-out;
+    background-color: transparent;
+    color: var(--mainColor);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .smedia-icons {
+    margin-left: 0;
+}
+  body {
+    background-image: url(../images/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+  }
+  body > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255 255 255 / 79%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .general-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .logo img {
+    width: 35%;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    margin: 7%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  h1 {
+    color: var(--secondColor);
+    text-transform: uppercase;
+    width: 60%;
+    font-weight: 300;
+    letter-spacing: 7px;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+  }
+  h1 span {
+    color: var(--mainColor);
+    font-weight: bold;
+  }
+  p {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: #2f2f2f;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .form {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form input {
+    height: 12vw;
+    width: 80vw;
+    border: 1px solid var(--mainColor);
+    border-radius: 40px;
+    outline: none;
+  }
+  .form .form-input {
+    padding-left: 20px;
+    color: var(--secondColor);
+  }
+  .form .button {
+    background: var(--mainColor);
+    background: linear-gradient(135deg, var(--mainColor) 0%, var(--secondColor) 100%);
+    width: 15vw;
+    height: 12vw;
+    border: var(--mainColor);
+    border-radius: 40px;
+    margin-left: -40px;
+    -webkit-box-shadow: 143px 134px 123px -124px var(--secondColor);
+    box-shadow: 143px 134px 123px -124px var(--secondColor);
+  }
+  .form .button img {
+    margin-top: 3px;
+    margin-left: 2px;
+  }
+}
+
+/* DESKTOP*/
+@media (min-width: 900px) {
+  * {
+    font-family: "roboto";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body > .overlay { 
+    display: none;
+  }
+  .general-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo {
+    margin: 3em 10em;
+    display: block;
+    position: absolute;
+  }
+  .logo img {
+    width: 100px;
+    position: relative;
+    top: -19px;
+    left: -12px;
+  }
+  .right {
+    background-color: silver;
+    background-image: url("../images/hero-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+  }
+  .right .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 49%);
+    position: absolute;
+    z-index: 1;
+  }
+  .right .timer {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .right .timer h2 {
+    width: 100%;
+    color: #FFF;
+    font-size: 125px;
+    font-weight: bold;
+  }
+  .right .timer span {
+    width: 100%;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .right .timer > div {
+    width: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    max-height: 18px;
+    line-break: anywhere;
+    animation-name: writer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-play-state: running;
+  }
+  @keyframes writer {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 150px;
+    }
+  }
+  .right .timer span {
+    width: 100%;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .left {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 8.5vw;
+    margin-top: 4em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            /* justify-content: center; */
+  }
+  h1 {
+    color: var(--secondColor);
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 7px;
+    font-size: 5em;
+    width: 30vw;
+    margin-top: 73px;
+  }
+  h1 span {
+    color: var(--mainColor);
+    font-weight: 600;
+  }
+  p {
+    font-weight: 400;
+    color: var(--secondColor);
+    letter-spacing: 2px;
+    width: 60%;
+    margin: 1.5em 0em;
+    line-height: 1.5;
+  }
+  .form {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form input {
+    height: 3vw;
+    width: 80vw;
+    border: 1px solid var(--mainColor);
+    border-radius: 40px;
+    outline: none;
+  }
+  .form .form-input {
+    padding-left: 20px;
+    color: var(--secondColor);
+  }
+  .form .button {
+    background: #f8bfbf;
+    background: linear-gradient(135deg, var(--mainColor) 0%, var(--secondColor) 100%);
+    width: 16vw;
+    height: 3vw;
+    border: var(--mainColor);
+    border-radius: 40px;
+    margin-left: -50px;
+    -webkit-box-shadow: 143px 134px 123px -124px var(--secondColor);
+    box-shadow: 143px 134px 123px -124px var(--secondColor);
+    cursor: pointer;
+  }
+  .form .button img {
+    margin-top: 3px;
+    margin-left: 2px;
+  }
+}
